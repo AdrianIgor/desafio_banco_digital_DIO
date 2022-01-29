@@ -8,26 +8,28 @@ import cliente.Endereco;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.AllArgsConstructor;
 
 @Data
 @EqualsAndHashCode
 @ToString
+@AllArgsConstructor
 abstract class Conta {
 	
-	protected Cliente cliente;
-	protected Endereco endereco;
-	protected Long numeroConta;
-	protected String agencia;
-	protected double saldo;
-	protected Cartao cartao;
-	protected List<Extrato> historico;
+	private Cliente cliente;
+	private Endereco endereco;
+	private long numeroConta;
+	private final String agencia = "0012";
+	private double saldo;
+	private Cartao cartao;
+	private List<Extrato> historico;
 	
-	public void depositar(double valor) {
-		
-	}
+	public abstract void depositar(double valor);
 	
-	public void extrato(Conta conta) {
-		
-	}
+	public abstract void sacar(double valor);
+	
+	protected abstract void metodoDepositar(double valor);
+	
+	public abstract void extrato(Conta conta, double valor);
 	
 }

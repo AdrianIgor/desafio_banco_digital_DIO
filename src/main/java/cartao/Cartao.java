@@ -9,8 +9,7 @@ import lombok.AllArgsConstructor;
 @EqualsAndHashCode
 public class Cartao {
 	
-	private String numero;
-	private int cod;
-	private String validade;
+	Credito cartaoDeCredito;
+	Debito cartaoDebito;
 	
 }
