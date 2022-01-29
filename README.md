@@ -1,7 +1,7 @@
 # desafio_banco_digital_DIO
 Desafio de Projeto da DIO para treinar a aplicação do POO em Java.
 
-Conceitos utilizados: Abstração, Encapsulamento, Polimorfismo, Herança, Associação de Classes, Enumeração, Listas.
+Conceitos utilizados: Abstração, Encapsulamento, Polimorfismo, Herança, Associação de Classes, Enumeração, Listas, Exceções.
 
 ## Funções
 . Abrir conta;
